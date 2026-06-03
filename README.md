@@ -1,0 +1,2 @@
+# Reference-Adjustment-vs-Net-Survival-in-Population-Based-Cancer-Studies
+Simulation study comparing reference-adjusted survival measures to net survival in population-based cancer research. Assesses bias, coverage, and power under varying conditions including errors in population mortality files. Applied analysis uses Swedish Cancer Register data on colon cancer, lung cancer, and melanoma. Implemented in Stata 18.
