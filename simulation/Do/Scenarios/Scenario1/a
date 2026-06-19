@@ -1,0 +1,20 @@
+// Scenario1/a.do
+// Scenario 1a: high baseline risk, small sex difference in survival.
+// (sex coding: sexc=1 is female, reference is male)
+
+global Nobs 1000          // number of individuals per simulated dataset
+
+// Weibull distribution parameters for cancer-specific survival time
+global lambda 0.3
+global gamma 0.8
+
+global maxt 15             // maximum follow-up time (years)
+
+// Covariate effects (log hazard ratios) on cancer-specific survival,
+// relative to the reference group (male, mean age)
+global ageloghr = log(1.03)   // per-year increase in age -> 3% increase in hazard
+global sexloghr = log(0.9)    // female (sexc=1) -> 10% decrease in hazard vs. male
+
+// Age distribution at diagnosis (Normal distribution)
+global meanage = 68
+global sdage = 12
